@@ -1,5 +1,6 @@
 body {
   margin-top: -8px;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
     to right,
     rgb(141, 167, 239),
@@ -22,7 +23,9 @@ nav {
   width: 100%;
   background-color: rgb(93, 93, 93);
   display: flex;
-  margin: 0 -10px;
+  
+  margin: 0 -8px;
+  position: absolute;
 }
 nav ul {
   margin-left: -32px;
@@ -57,9 +60,8 @@ footer {
   justify-content: center;
   font-weight: bold;
   margin: 0 -8px;
-  /* position: absolute;
-  bottom: 0; */
   width: 100%;
+  position: absolute;
 }
 main{
   margin-right: 8px;
