@@ -2,18 +2,39 @@ body {
   margin-top: -8px;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-    to right,
-    rgb(141, 167, 239),
-    rgb(3, 251, 255)
+    to left,
+    #4b85ac,
+    rgba(218, 178, 254, 0.817)
   );
 }
-h2{
-  color: white;
-  font-weight: bold;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: aliceblue;
+}
+.margenResultado {
+  margin: 16px 10px;
+}
+.margenDerecha {
+  margin-right: 20px;
+  margin-left: auto;
+}
+.margenIzquierda {
+  margin-right: auto;
+  margin-left: 20px;
+}
+h2 {
+  text-align: left;
+  font-family: Arial;
+  font-size: 30px;
+  color: #e3fdfb;
+  text-shadow: 0px 0px 9px #131313;
   font-size: 25px;
   margin-bottom: 5px;
+  padding-top: 20px;
 }
-hr{
+hr {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -23,9 +44,8 @@ nav {
   width: 100%;
   background-color: rgb(93, 93, 93);
   display: flex;
-  
   margin: 0 -8px;
-  position: absolute;
+  position: fixed;
 }
 nav ul {
   margin-left: -32px;
@@ -41,6 +61,7 @@ nav ul li span {
   font-weight: bold;
 }
 header {
+  padding-top: 10px;
   margin-left: -8px;
   width: 100%;
   height: 360px;
@@ -63,8 +84,9 @@ footer {
   width: 100%;
   position: absolute;
 }
-main{
+main {
   margin-right: 8px;
+  margin-bottom: 40px;
 }
 main section {
   display: flex;
@@ -78,10 +100,6 @@ main section {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-.titloFaseGrupo {
-  margin-left: -8px;
-  padding-left: 20px;
-}
 main section div article {
   background-color: red;
 }
@@ -92,49 +110,122 @@ main section div article {
     rgb(75, 246, 249)
   );
   text-align: center;
+  font-family: Arial Black;
   font-weight: bold;
-  color: rgba(237, 250, 234, 0.864);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
 }
 .fechaLugar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .paisesPartido {
   display: flex;
   flex-direction: row;
-  width: 300px;
-  justify-content: space-around;
+  width: 400px;
+  justify-content: center;
 }
 .partidoGris {
-  background-color: grey;
+  background-color: rgb(183, 183, 183);
   width: auto;
 }
 .partidoBlanco {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(234, 234, 234);
   width: auto;
 }
 .resultados {
   display: flex;
-  flex-direction: row;
 }
 .grupoIndividual {
   width: auto;
-  margin-right: 40px;
-  margin-bottom: 20px;
+  margin: 20px 20px;
+  border: solid black;
 }
-.octavosBlanco{
+.octavosBlanco {
   background-color: white;
+  padding: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 100%;
+  width: auto;
   margin-right: -8px;
 }
-.octavosGris{
+.octavosGris {
   background-color: grey;
+  padding: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 100%;
+  width: auto;
+  margin-right: -8px;
+}
+.inicioInterior {
+  padding-top: 10px;
+}
+.volverInicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+@media screen and (max-width: 767px) and (min-width: 577px) {
+  .paisesPartido {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+  .paisesPartido {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+  }
+  .margenDerecha {
+    margin-right: 5px;
+  }
+  .margenIzquierda {
+    margin-left: 5px;
+  }
+  header {
+    padding-top: 30px;
+  }
+  header img {
+    height: 160px;
+    width: 280px;
+  }
+  nav {
+    height: auto;
+    width: 100%;
+    background-color: rgb(93, 93, 93);
+    display: flex;
+    margin: 0 -8px;
+    position: fixed;
+  }
+  nav ul {
+    margin-left: -32px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 12px 10px;
+    justify-content: center;
+  }
+  nav ul li {
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+  nav ul li span {
+    color: aliceblue;
+    font-weight: bold;
+  }
 }
