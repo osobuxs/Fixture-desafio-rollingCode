@@ -231,4 +231,10 @@ main section div article {
     color: aliceblue;
     font-weight: bold;
   }
+  body{
+    font-size: 80%;
+  }
+  .margenResultado {
+    margin: 13px 10px;
+  }
 }
