@@ -86,7 +86,7 @@ footer {
   position: absolute;
 }
 main {
-  margin-right: 8px;
+  margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 20px;
   
@@ -190,7 +190,7 @@ main section div article {
   .paisesPartido {
     display: flex;
     flex-direction: row;
-    width: 300px;
+    width: 325px;
     justify-content: center;
   }
   .margenDerecha {
